@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel of Faith</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wheel of Faith</h1>
+        <input type="text" id="names" placeholder="Enter names separated by commas">
+        <button onclick="setupWheel()">Setup Wheel</button>
+        <canvas id="wheelCanvas" width="500" height="500"></canvas>
+        <button onclick="spinWheel()">Spin</button>
+        <div>
+            <label for="color">Choose Wheel Color:</label>
+            <input type="color" id="color" name="color" value="#ff0000" onchange="changeColor()">
+        </div>
+        <div>
+            <label for="probability">Set Probability (%):</label>
+            <input type="number" id="probability" name="probability" min="0" max="100" step="1">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
